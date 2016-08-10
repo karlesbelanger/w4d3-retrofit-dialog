@@ -18,6 +18,17 @@ public class Student {
     @SerializedName("password")
     @Expose
     private String password;
+    @SerializedName("image")
+    @Expose
+    private String imageName;
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
 
     /**
      * @return The name

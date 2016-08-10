@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        NamesAdapter namesAdapter = new NamesAdapter(RetrofitMagic.getStudents());
+        NamesAdapter namesAdapter = new NamesAdapter(RetrofitMagic.getStudents(), this);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.a_main_recycler);
         mRecyclerView.setAdapter(namesAdapter);

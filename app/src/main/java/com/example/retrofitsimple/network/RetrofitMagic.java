@@ -33,7 +33,7 @@ public class RetrofitMagic {
 
         //5. Setting up the method to be called from the interface
         Call<ArrayList<Student>> studentsCall
-                = namesInterface.retrieveStudents();
+                = namesInterface.retrieveStudentsImages();
 
         ArrayList<Student> students = null;
 

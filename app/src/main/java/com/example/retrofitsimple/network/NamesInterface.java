@@ -16,4 +16,7 @@ public interface NamesInterface {
     //2. Add interface with endpoints
     @GET("/v2/57a4dfb40f0000821dc9a3b8")
     Call<ArrayList<Student>> retrieveStudents();
+
+    @GET("/v2/57ab95a1120000c12173b6d4")
+    Call<ArrayList<Student>> retrieveStudentsImages();
 }
