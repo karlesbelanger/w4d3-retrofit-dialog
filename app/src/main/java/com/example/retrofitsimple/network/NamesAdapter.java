@@ -49,7 +49,6 @@ public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.ViewHolder> 
         Glide.with(mContext)
 //                .load("https://lh4.ggpht.com/wKrDLLmmxjfRG2-E-k5L5BUuHWpCOe4lWRF7oVs1Gzdn5e5yvr8fj-ORTlBF43U47yI=w300")
                 .load(student.getImageName())
-                .centerCrop()
                 .into(imageView);
 
         Log.d(TAG, "onBindViewHolder: " + student.getImageName());
